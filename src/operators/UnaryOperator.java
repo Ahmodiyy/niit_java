@@ -17,7 +17,7 @@ public class UnaryOperator {
         UnaryOperator unaryOperator = new UnaryOperator();
         System.out.println( unaryOperator.preIncrement(1));
         System.out.println(unaryOperator.preDecrement(2));
-        System.out.println( unaryOperator.postDecrement(3));
+        System.out.println( unaryOperator.postIncrement(3));
         System.out.println(unaryOperator.postDecrement(4));
     }
 }
