@@ -10,7 +10,6 @@ public class TernaryOperator {
 
     public static void main(String[] args) {
         TernaryOperator ternaryOperator = new TernaryOperator();
-
         System.out.println(ternaryOperator.isGreater(20, 53));
     }
 }

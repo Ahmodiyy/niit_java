@@ -33,8 +33,30 @@ public class ControlFlow {
                 System.out.println("You don't want higher number");
         }
     }
+
+    public void forLoop(){
+        for(int num = 0; num<10; num++){
+            System.out.println("loop at " + num);
+        }
+    }
+    public void whileLoop(){
+        int num = 0;
+        while (num < 10){
+            System.out.println(num);
+            num++;
+        }
+    }
+
+    public void doWhile(){
+        int num = 0;
+        do {
+            System.out.println(num);
+            num++;
+        }while (num < 10);
+    }
+
     public static void main(String[] args) {
         ControlFlow controlFlow = new ControlFlow();
-        controlFlow.switching();
+        controlFlow.doWhile();
     }
 }
