@@ -8,7 +8,8 @@ public class Strings {
     }
 
     public static void main(String[] args) {
-        Strings strings = new Strings();
-        System.out.println( strings.getMyNameAndSurname());
+        //Strings strings = new Strings();
+        //System.out.println( strings.getMyNameAndSurname());
+
     }
 }
