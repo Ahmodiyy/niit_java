@@ -11,23 +11,21 @@ public class Check {
         int numOne = 0;
         int numTwo = 0;
         int age = 0;
-        try {
-            System.out.println("input num one");
-            numOne = scanner.nextInt();
-            System.out.println("input num two");
-            numTwo = scanner.nextInt();
+//        try {
+//            System.out.println("input num one");
+//            numOne = scanner.nextInt();
+//            System.out.println("input num two");
+//            numTwo = scanner.nextInt();
             System.out.println("input age");
             age = scanner.nextInt();
-            if(age < 18){
-                throw new RuntimeException();
-            }
+            assert age < 18 : "age must be less than 18";
+//            if(age < 18){
+//                throw new RuntimeException();
+//            }
 
-        } catch (Exception mismatchException){
-            mismatchException.printStackTrace();
-        }
-        finally {
-
-        }
+//        } catch (Exception mismatchException){
+//            mismatchException.printStackTrace();
+//        }
 
         return add(numOne, numTwo);
     }
@@ -36,7 +34,7 @@ public class Check {
         return numOne + numTwo;
     }
     public static void main(String[] args) throws IOException {
-        //System.out.println( preformCalculation());
+        System.out.println( preformCalculation());
         BufferedReader bufferedReader = null;
         try {
             bufferedReader = new BufferedReader(new FileReader("C:\\Users\\Ahmod\\Documents\\input.txt"));
