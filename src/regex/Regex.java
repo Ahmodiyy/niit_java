@@ -50,7 +50,7 @@ public class Regex {
         System.out.println("accept union letter: " + passMatcher.matches());
     }
     static void acceptQuantifierQuestion(){
-        Pattern pattern = Pattern.compile("[0-9]{11}"); // input consonant letter
+        Pattern pattern = Pattern.compile("\\d{11}"); // input consonant letter
         Matcher failMatcher = pattern.matcher("0000000000088888888888");
         Matcher passMatcher = pattern.matcher("09094459999");
         System.out.println("accept union letter: " + failMatcher.matches());
